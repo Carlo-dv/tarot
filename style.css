@@ -1,0 +1,266 @@
+body{
+    max-width: auto;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border: 0px;
+    
+    background:black ;
+}
+#titulo{
+    color: black;
+    font-size: 30px;
+    margin-top: 10px;
+    background: gray;
+    
+}
+
+
+p{
+    
+    color: white;
+    margin-bottom:  25px;
+    margin-top: 0;
+    text-align: center;
+    
+
+}
+h1{
+    
+    display: flex;
+    /*! flex-flow: wrap; */
+    color: white;
+    /*! text-align: center; */
+
+    /*! font-size: 25px; */
+    /*! animation: alternate; */
+    /*! margin-left:60px; */
+    
+    text-align: left;
+}
+
+
+
+
+h3{
+    color: white;
+    font-size: 15px;
+    margin: 5px;
+}
+h2{
+    width: 100%;
+    margin-bottom:5px; 
+    text-align: center;
+    color: white;
+    border:1px solid white;
+    padding:10px;
+}
+
+#carta1,#carta2,#carta3,#carta4{
+    width: 110px;
+    height: 180px;
+    border: 5px solid white;
+    margin: 2px;
+}
+
+.marco{
+    
+    display: flex;
+    
+    border: 0;
+    padding: 0;
+    margin: 0;
+    flex-flow: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    
+    
+}
+.cartas{
+    margin-bottom: 15px;
+    display:inline;
+    text-align: center;
+    align-items: center;
+    
+        
+}
+
+/*/Animaciones*/
+
+#carta4_2,#carta4_3,#carta4_1{
+    border: 3px solid red;
+    height: 317px;
+    position:absolute ;
+    margin-top: 40px;
+    animation-name: animacion_carta_2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;     
+    
+        
+}
+
+#carta4_1{
+    animation-name: animacion_carta_2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;    
+}
+
+#carta4_2{
+    animation-name: animacion_carta_2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;    
+}
+
+
+.copy{
+
+    display: flex;
+    flex-flow: column
+    align-items: center;
+    justify-content:center;
+    width: 300px;
+    height: 371px;
+    
+    text-align: center;
+ 
+}
+
+
+button{
+    width: 120px;
+    height: 50%;
+    margin: 10px;
+}
+label{
+    color: white;
+    margin: 5px;
+    border: 1px;
+}
+.datos{
+    margin: 5px;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+#fecha{
+    margin-top: 10px;
+    width: 120px;
+  
+    
+}
+
+
+#labesl_cartas{
+    display: flex;
+    border: 1px solid white;
+    justify-content: space-around;
+}
+@keyframes animacion_carta{
+    from{opacity: 0;}
+    to{opacity: 1;}
+    
+}
+/*Fucnion de animacion*/
+
+@keyframes animacion_carta_2{
+  from{opacity: 0.2;}
+   to{opacity: 0.8;}
+    
+}
+
+
+@keyframes font-anmtion{
+    from{color: black;;}
+    to{accent-color:white;}
+}
+#carta1,#carta2,#carta3,#labesl_cartas{
+    animation-name: animacion_carta;
+    animation-duration: 4s;
+   
+}
+.barajas{
+    border: 1px solid white;
+}
+
+#baraja_1,#baraja_2{
+    width: 10px;
+}
+
+.formulario{
+    display: flex;
+    
+    justify-content: center;
+    align-content: center;
+    width: 99%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    border-top: 1px solid red;
+    text-align: center;
+    
+}
+form{
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#info{
+    width: 300px;
+    height: 100px;
+    margin: 5px;
+}
+#email{
+    text-align: center;
+    width: 130px;
+    height: 20px;
+    background-color: black;
+    color: white
+
+}
+#info{
+    
+    text-align: center;
+    width: 150px;
+    background-color: black;
+    color: white
+}
+#enviar{
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+#info_label{
+    
+    border: solid white 1px;
+   
+}
+.audios{
+    width: 382px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+audio{
+    border: 3px solid white;
+   
+    background: red;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 50px;
+    
+    
+}

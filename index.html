@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Tarot</title>
+</head>
+<body>
+    
+<p id="titulo">Tarot interfaz
+
+</p>
+<div class="marco">
+    <div class="cartas">
+        
+        <div id="labesl_cartas">
+
+        <label for="dia">Dia</label>
+        <label for="mes">Mes</label>
+        <label for="año">Año</label>
+   
+    </div>
+    <img id ="carta3"src="0.jpeg" alt="" name ="dia"> 
+   
+    <img id ="carta2"src="0.jpeg" alt="" name ="mes">
+   
+    <img id ="carta1"src="0.jpeg" alt="" name="año">
+   
+    
+
+   
+    
+</div>
+<div class="audios">
+    <audio src="sonidos/12s.mp3" controls autoplay="true" id="carta_1_a"></audio>
+    <audio src="" controls id="carta_2_a"></audio>
+    <audio src="" controls id="carta_3_a"></audio>
+</div>    
+
+
+
+
+<div class="datos">
+<h3>Fecha de Nacimiento: </h3>
+
+<input id ="fecha"type="date" name "fecha" value="date">
+<button onclick="tirar()">Baraja Marsella</button>
+
+<button onclick="tirar_2()">Baraja Otra</button>
+</div>
+
+
+<p>Acá puedes visualizar 
+    el Sincretismo grafico de las 3 cartas.<br>
+    
+    Centrar tu atencion en esta carta hace que el simbolismo 
+   resuene en tu inconciente cono un lenguaje que habita en ti, 
+   y que se activa con la visualiazación</p>
+
+<h2>MIXTURA DE LAS 3 CARTAS</h2>
+
+
+<div class="copy">
+
+   
+    <img id ="carta4_1"src="0.jpeg" alt=""name="dia_1">
+    <img id ="carta4_2"src="0.jpeg" alt=""name="mes_2">
+    <img id ="carta4_3"src="0.jpeg" alt=""name="año_2">
+    
+   
+
+    
+</div>
+
+
+</div>
+<div class="formulario">
+    <form action="mailto:aprtlt26@gmail.com.com" method="post">
+        <label for="email">Email</label>
+        
+        <input type="email" name="email" id="email" placeholder="aprtlt26@gmail.com">
+        <label for="info" id ="info_label">Mensaje </label>
+        
+        <input type="text" name="info" id="info" placeholder="Escribe tu Consulta.">
+        <button id="enviar">Enviar</button>
+    </form>
+</div>
+</body>
+</html>
