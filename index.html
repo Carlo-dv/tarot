@@ -35,9 +35,10 @@
     
 </div>
 <div class="audios">
-    <audio src="sonidos/12s.mp3" controls autoplay="true" id="carta_1_a"></audio>
-    <audio src="" controls id="carta_2_a"></audio>
-    <audio src="" controls id="carta_3_a"></audio>
+ 
+    <audio src="sonidos/8s.mp3" controls  id="carta_1_a" autoplay preload="auto" loop></audio>
+    <audio src="" controls id="carta_2_a" autoplay preload="auto" loop></audio>
+    <audio src="" controls id="carta_3_a" autoplay preload="auto" loop></audio>
 </div>    
 
 
@@ -77,16 +78,41 @@
 
 
 </div>
-<div class="formulario">
-    <form action="mailto:aprtlt26@gmail.com.com" method="post">
+<div class="formulario" id ="form">
+    <form action="https://formspree.io/f/xdobydqp" method="post">
         <label for="email">Email</label>
         
         <input type="email" name="email" id="email" placeholder="aprtlt26@gmail.com">
         <label for="info" id ="info_label">Mensaje </label>
         
         <input type="text" name="info" id="info" placeholder="Escribe tu Consulta.">
-        <button id="enviar">Enviar</button>
+        <button type="submit" id="enviar">Enviar</button>
     </form>
+
+    <script>
+
+const $form=document.querySelector('#form');
+$form.addEventListener('submit',handleSubmit);
+
+async function handleSubmit(event){
+    event.preventDefault();
+    const form= new FormData(this);
+    const response =await fetch(this.action,{
+        method:this.method,
+        body:form,
+        headers:{
+            "Accept": "aplication/jason"
+        }
+
+    })
+    if (response.ok){
+        this.reset()
+        alert("Gracias Te enviaremos una respuesta pronto")
+    }
+
+}
+
+    </script>
 </div>
 </body>
 </html>

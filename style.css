@@ -1,5 +1,5 @@
 body{
-    max-width: auto;
+    
     text-align: center;
     padding: 0;
     margin: 0;
@@ -119,7 +119,7 @@ h2{
 .copy{
 
     display: flex;
-    flex-flow: column
+    flex-flow: column;
     align-items: center;
     justify-content:center;
     width: 300px;
